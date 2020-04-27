@@ -1,0 +1,29 @@
+$c-btn--background-color:  $main--red !default;
+$c-btn--box-shadow:        none !default;
+$c-btn--border-width:      1px !default;
+$c-btn--border-style:      solid !default;
+$c-btn--border-radius:     8px !default;
+$c-btn--padding:           13px 22px !default;
+$c-btn--border-color:      $c-btn--background-color !default;
+$c-btn--font-size:         14px !default;
+$c-btn--font-family:       $main--font-family!default;
+$c-btn--font-weight:       bold !default;
+$c-btn--text-transform:    uppercase !default;
+$c-btn--letter-spacing:    2.8px !default;
+$c-btn--color:             $main--white !default;
+
+
+.c-btn {
+  box-shadow: $c-btn--box-shadow;
+  border: $c-btn--border-width $c-btn--border-style $c-btn--border-color;
+  border-top-right-radius: $c-btn--border-radius;
+  border-bottom-right-radius: $c-btn--border-radius;
+  padding: $c-btn--padding;
+  background-color: $c-btn--background-color;
+  font-size: $c-btn--font-size;
+  font-family: $c-btn--font-family;
+  font-weight: $c-btn--font-weight;
+  text-transform: $c-btn--text-transform;
+  letter-spacing: $c-btn--letter-spacing;
+  color:$c-btn--color;
+}

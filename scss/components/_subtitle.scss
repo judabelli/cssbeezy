@@ -1,0 +1,25 @@
+$c-subtitle--font-size:                   size(16px) !default;
+$c-subtitle--font-size--desktop:          size(24px, $main--font-size--xl) !default;
+$c-subtitle--font-family:                 $main--font-family !default;
+$c-subtitle--line-height:                 1.5 !default;
+$c-subtitle--line-height--desktop:        1.42 !default;
+$c-subtitle--text-align:                  center !default;
+$c-subtitle--text-align--desktop:         left !default;
+$c-subtitle--color:                       transparentize($main--white,.13) !default;
+$c-subtitle--opacity:                     .7 !default;
+$c-subtitle--margin-botttom--desktop:     size(50px, $main--font-size--xl) !default;
+
+.c-subtitle {
+  opacity: $c-subtitle--opacity;
+  font-size:$c-subtitle--font-size;
+  line-height: $c-subtitle--line-height;
+  font-family: $c-subtitle--font-family;
+  text-align: $c-subtitle--text-align;
+  color: $c-subtitle--color;
+  @include respond-to('medium') {
+    margin-bottom: $c-subtitle--margin-botttom--desktop;
+    font-size: $c-subtitle--font-size--desktop;
+    line-height: $c-subtitle--line-height--desktop;
+    text-align: $c-subtitle--text-align--desktop;
+  }
+}

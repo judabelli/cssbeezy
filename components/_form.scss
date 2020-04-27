@@ -1,0 +1,23 @@
+$c-form--display :               flex;
+$c-form--margin-top :            size(20px);
+$c-form--margin-right :          auto;
+$c-form--margin-left :           auto;
+$c-form--margin-left--desktop :  0;
+$c-form--max-width:              280px - $c-input--padding * 2 !default;
+$c-form--max-width--desktop:     400px !default;
+$c-form--flex-direction:         row  !default;
+
+.c-form {
+  display: $c-form--display;
+  margin-top: $c-form--margin-top;
+  margin-right: $c-form--margin-right;
+  margin-left: $c-form--margin-left;
+  max-width: $c-form--max-width;
+  .c-form--horizontal {
+    flex-direction: $c-form--flex-direction;
+  }
+  @include respond-to('medium') {
+    margin-left: $c-form--margin-left--desktop;
+    max-width: $c-form--max-width--desktop;
+  }
+}

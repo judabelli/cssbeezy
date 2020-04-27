@@ -1,0 +1,29 @@
+// Font Families
+$main--font-family: "SegoeUI" !default;
+$main--font-family--light: "SegoeUI-Light" !default;
+$main--font-family--bold: "SegoeUI" !default;
+
+// Font Sizes
+$main--font-size--xl: 16px !default;
+$main--font-size--lg: 14px !default;
+$main--font-size--md: 12px !default;
+$main--font-size--sm: 10px !default;
+
+// Colors
+$main--red :        #f05638 !default;
+$main--white :      #ffffff !default;
+$main--blue :       #172f52 !default;
+$main--blue-light : #517ed8 !default;
+
+// Breakpoints
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1200px;
+$screen-xl: 1600px;
+
+$breakpoints: (
+  'small':  $screen-sm,
+  'medium': $screen-md,
+  'large':  $screen-lg,
+  'extralarge' : $screen-xl
+) !default;

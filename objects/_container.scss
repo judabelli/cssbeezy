@@ -1,0 +1,10 @@
+$o-container--padding:    20px !default;
+$o-container--display:    flex !default;
+$o-container--direction:  column !default;
+
+.o-container {
+  display: $o-container--display;
+  padding: $o-container--padding;
+  flex-direction: $o-container--direction;
+}
+
