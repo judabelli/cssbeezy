@@ -5,6 +5,7 @@ $c-logo--grid-row:                1 !default;
 $c-logo--display--desktop:        flex !default;
 $c-logo--alignment--desktop :     flex-end !default;
 $c-logo--margin-top :             size(40px) !default;
+$c-logo--margin-top--desktop :    size(164px, $main--font-size--xl) !default;
 $c-logo--margin-y :               auto !default;
 $c-logo--margin-bottom :          size(10px) !default;
 $c-logo--margin-bottom--desktop : 0 !default;
@@ -25,5 +26,6 @@ $c-logo--max-height :             41px !default;
     margin-bottom: $c-logo--margin-left--desktop;
     margin-left: $c-logo--margin-bottom--desktop;
     grid-column: $c-logo--grid-column--desktop;
+    margin-top: $c-logo--margin-top--desktop;
   }
 }
