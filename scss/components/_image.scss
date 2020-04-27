@@ -1,12 +1,22 @@
-$c-image-grid-area :               image !default;
-$c-image-margin :                  0 auto !default;
-$c-image-img-margin--desktop :     0 40px !default;
-$c-image-margin-top--desktop-lg :  3.375rem !default;
+$c-image-grid-column--start:        1 !default;
+$c-image-grid-column--end:          3 !default;
+$c-image-grid-column--desktop:      1 !default;
+$c-image-grid-row:                  2 !default;
+$c-image-grid-row--start--desktop:  1 !default;
+$c-image-grid-row--end--desktop:    3 !default;
+$c-image-margin :                   0 auto !default;
+$c-image-img-margin--desktop :      0 40px !default;
+$c-image-margin-top--desktop-lg :   3.375rem !default;
 
 .c-image {
-    grid-area: $c-image-grid-area;
+    grid-column-start: $c-image-grid-column--start;
+    grid-column-end: $c-image-grid-column--end;
+    grid-row: $c-image-grid-row;
     margin: $c-image-margin;
     @include respond-to('medium') {
+      grid-column: $c-image-grid-column--desktop;
+      grid-row-start: $c-image-grid-row--start--desktop;
+      grid-row-end: $c-image-grid-row--end--desktop;
       img {
         margin: $c-image-img-margin--desktop;
       }

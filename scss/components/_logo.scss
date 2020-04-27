@@ -1,4 +1,7 @@
-$c-logo--grid-area :              logotipe !default;
+$c-logo--grid-column--start:      1 !default;
+$c-logo--grid-column--end:        3 !default;
+$c-logo--grid-column--desktop:    2 !default;
+$c-logo--grid-row:                1 !default;
 $c-logo--display--desktop:        flex !default;
 $c-logo--alignment--desktop :     flex-end !default;
 $c-logo--margin-top :             size(40px) !default;
@@ -7,15 +10,20 @@ $c-logo--margin-bottom :          size(10px) !default;
 $c-logo--margin-bottom--desktop : 0 !default;
 $c-logo--margin-left--desktop:    0 !default;
 $c-logo--max-width :              132px !default;
+$c-logo--max-height :             41px !default;
 
 .c-logo {
-  grid-area: $c-logo--grid-area;
+  grid-column-start: $c-logo--grid-column--start;
+  grid-column-end: $c-logo--grid-column--end;
+  grid-row:1;
   margin: $c-logo--margin-top  $c-logo--margin-y $c-logo--margin-bottom;
   max-width: $c-logo--max-width;
+  max-height: $c-logo--max-height;
   @include respond-to('medium') {
     align-self: $c-logo--alignment--desktop;
     display: $c-logo--display--desktop;
     margin-bottom: $c-logo--margin-left--desktop;
     margin-left: $c-logo--margin-bottom--desktop;
+    grid-column: $c-logo--grid-column--desktop;
   }
 }

@@ -1,11 +1,21 @@
-$c-content--grid-area:                   content !default;
+$c-content--grid-column--start:          1 !default;
+$c-content--grid-column--end:            3 !default;
+$c-content--grid-column--desktop:        2 !default;
+$c-content--grid-row:                    3 !default;
+$c-content--grid-row--start--desktop:    2 !default;
+$c-content--grid-row--end--desktop:      3 !default;
 $c-content--margin:                      0 auto !default;
 $c-content--margin-right--desktop:       120px !default;
 
 .c-content {
-  grid-area: $c-content--grid-area;
+  grid-column-start: $c-content--grid-column--start;
+  grid-column-end: $c-content--grid-column--end;
+  grid-row: $c-content--grid-row;
   margin: $c-content--margin;
   @include respond-to('medium') {
     margin-right: $c-content--margin-right--desktop;
+    grid-column: $c-content--grid-column--desktop;
+    grid-row-start: $c-content--grid-row--start--desktop;
+    grid-row-end: $c-content--grid-row--end--desktop;
   }
 }
