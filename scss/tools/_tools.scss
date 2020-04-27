@@ -17,3 +17,13 @@
         + "Available breakpoints are: #{map-keys($breakpoints)}.";
   }
 }
+
+// Mixin to generate a Clearfix
+
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}

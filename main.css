@@ -412,10 +412,17 @@ body {
       -ms-grid-row: 1;
       grid-row-start: 1;
       -ms-grid-row-span: 2;
-      grid-row-end: 3; }
+      grid-row-end: 3;
+      margin-right: 0; }
       .c-image img {
-        margin: 0 40px; } }
-  @media (min-width: 1200px) {
+        margin: 0 167px 0 auto;
+        float: right;
+        max-height: 90vh; }
+      .c-image::after {
+        display: block;
+        content: "";
+        clear: both; } }
+  @media (min-width: 1600px) {
     .c-image {
       margin-top: 3.375rem; } }
 

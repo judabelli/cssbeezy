@@ -5,8 +5,9 @@ $c-image-grid-row:                  2 !default;
 $c-image-grid-row--start--desktop:  1 !default;
 $c-image-grid-row--end--desktop:    3 !default;
 $c-image-margin :                   0 auto !default;
-$c-image-img-margin--desktop :      0 40px !default;
-$c-image-margin-top--desktop-lg :   3.375rem !default;
+$c-image-img-margin--desktop :      0 167px 0 auto !default;
+$c-image-margin-top--desktop-xl :   3.375rem !default;
+$c-image-img-float--desktop :       right !default;
 
 .c-image {
     grid-column-start: $c-image-grid-column--start;
@@ -17,11 +18,15 @@ $c-image-margin-top--desktop-lg :   3.375rem !default;
       grid-column: $c-image-grid-column--desktop;
       grid-row-start: $c-image-grid-row--start--desktop;
       grid-row-end: $c-image-grid-row--end--desktop;
+      margin-right: 0;
       img {
         margin: $c-image-img-margin--desktop;
+        float: $c-image-img-float--desktop;
+        max-height: 90vh;
       }
+      @include clearfix();
    }
-  @include respond-to('large') {
-    margin-top: $c-image-margin-top--desktop-lg;
+  @include respond-to('extralarge') {
+    margin-top: $c-image-margin-top--desktop-xl;
   }
 }
