@@ -359,7 +359,7 @@ body {
   color: #ffffff; }
   @media (min-width: 1024px) {
     .c-title {
-      margin-top: 1.4375rem;
+      margin-top: 1.8125rem;
       margin-bottom: 1.875rem;
       font-size: 3rem;
       text-align: left; } }
@@ -433,7 +433,7 @@ body {
   letter-spacing: 2.8px;
   color: #ffffff; }
 
-.c-content {
+.c-content-group {
   -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-column-span: 2;
@@ -442,7 +442,7 @@ body {
   grid-row: 3;
   margin: 0 auto; }
   @media (min-width: 1024px) {
-    .c-content {
+    .c-content-group {
       margin-right: 120px;
       -ms-grid-column: 2;
       grid-column: 2;

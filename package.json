@@ -4,15 +4,12 @@
   "description": "- Structure based on ITCSS architecture system, by Harry Roberts [(+ info)](https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/)\r Complemented with a [BEM-based nomenclature](http://getbem.com/).",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-autoprefixer": "^7.0.1",
-    "postcss-scss": "^2.0.0"
+    "gulp-autoprefixer": "^7.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "cssnext": "^1.8.4",
     "gulp": "^4.0.2",
-    "gulp-postcss": "^8.0.0",
-    "precss": "^4.0.0"
+    "gulp-postcss": "^8.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
